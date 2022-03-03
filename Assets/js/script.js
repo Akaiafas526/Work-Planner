@@ -20,10 +20,19 @@ for (let i = 0; i < saveButtons.length; i++) {
             target = event.target.parentNode.parentNode.parentNode;
         }
         
-        let dateToSave = target.children[1].value;
+        // console.log(target.children[1].value);
+        let dataToSave = target.children[1].value;
         let divId = target.id;
 
         localStorage.setItem(divId, JSON.stringify(dataToSave));
 
+
     })
 }
+let updatedDate = moment().format('YYYY-MM-DD HH:mm:ss');
+console.log(currentDate);
+
+setInterval(() => {
+    updatedDate = moment().format('YYYY-MM-DD HH:mm:ss');
+    currentDay.textContent = updatedDate;
+},1000);

@@ -36,3 +36,7 @@ setInterval(() => {
     updatedDate = moment().format('YYYY-MM-DD HH:mm:ss');
     currentDay.textContent = updatedDate;
 },1000);
+
+let currentHour = moment().format('h a').split('');
+console.log(currentHour[1]);
+

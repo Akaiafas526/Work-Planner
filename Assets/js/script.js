@@ -1,3 +1,4 @@
+// Global Variables
 let textArea = document.querySelectorAll('textarea');
 let saveButtons = document.querySelectorAll('.save-btn');
 let currentDay = document.getElementById('currentDay');
